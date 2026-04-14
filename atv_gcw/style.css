@@ -1,0 +1,60 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* espaço entre os itens */
+    background-color: #e85aa3;
+    padding: 10px 0;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+.menu li {
+    position: relative;
+}
+
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu a:hover {
+    background-color: pink;
+}
+
+
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: cornflowerblue;
+    display: none; 
+    min-width: 200px;
+}
+
+
+.submenu li a {
+    padding: 10px;
+}
+
+
+.menu li:hover .submenu {
+    display: block;
+}
